@@ -175,7 +175,7 @@ class ThumbnailFile(ImageFieldFile):
 
     # Be consistant with standard behaviour, even though these methods don't
     # actually alter data any more.
-    save.alters_data = True
+    # save.alters_data = True
     delete.alters_data = True
 
     def _get_image(self):
