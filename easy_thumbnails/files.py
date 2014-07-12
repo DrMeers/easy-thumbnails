@@ -162,9 +162,10 @@ class ThumbnailFile(ImageFieldFile):
             thumbnail_options = ThumbnailOptions(thumbnail_options)
         self.thumbnail_options = thumbnail_options
 
-    def save(self, *args, **kwargs):
-        # Can't save a ``ThumbnailFile`` directly.
-        raise NotImplementedError()
+    # see comment on d2c949a1
+    # def save(self, *args, **kwargs):
+    #     # Can't save a ``ThumbnailFile`` directly.
+    #     raise NotImplementedError()
 
     def delete(self, *args, **kwargs):
         # Can't delete a ``ThumbnailFile`` directly, it doesn't have a
